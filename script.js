@@ -229,6 +229,7 @@ function updateUILanguage() {
 
 // Load vocabulary from JSON
 async function loadVocabulary(lang) {
+  console.log('loadVocabulary', lang, 'protocol', window.location.protocol);
   const file = lang === 'ru' ? 'ru.json' : 'vocab.json';
   const isFileProtocol = window.location.protocol === 'file:';
 
@@ -788,6 +789,7 @@ window.addEventListener('click', (e) => {
 });
 
 function switchLanguage(lang) {
+  console.log('switchLanguage called:', { from: currentLanguage, to: lang });
   if (lang === currentLanguage) return;
   document.querySelectorAll('.lang-option').forEach(btn => btn.classList.remove('active'));
   const targetBtn = document.querySelector(`.lang-option[data-lang="${lang}"]`);

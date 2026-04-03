@@ -14,7 +14,16 @@
 
 <header>
   <h1>📚 HSK 1–4 Vocabulary Builder</h1>
+  <div class="burger-group">
+    <button id="burgerBtn" class="burger-btn" aria-label="Open language menu">🌐</button>
+    <span class="burger-label" id="burgerLabel">Language</span>
+  </div>
   <p class="subtitle">Study • Quiz • Track • Master</p>
+  <div id="burgerLangMenu" class="burger-lang-menu hidden">
+    <div class="burger-menu-title"><strong id="burgerMenuTitle">Choose language</strong></div>
+    <button class="lang-option" data-lang="en">🇺🇸 English</button>
+    <button class="lang-option" data-lang="ru">🇷🇺 Russian</button>
+  </div>
 </header>
 
 <!-- Mode tabs -->
@@ -2012,7 +2021,7 @@
     {"chinese":"照顾","pinyin":"zhàogu","russian":"заботиться, ухаживать","level":3,"type":"v"},
     {"chinese":"祝","pinyin":"zhù","russian":"желать, поздравлять","level":3,"type":"v"},
     {"chinese":"注意","pinyin":"zhùyì","russian":"обращать внимание, быть внимательным","level":3,"type":"v"},
-    {"chinese":"长","pinyin":"cháng","russian":"длинный","level":3,"type":"adj"}
+    {"chinese":"长","pinyin":"cháng","russian":"длинный","level":3,"type":"adj"},
 
 
 
@@ -2617,7 +2626,7 @@
 
 
 </script>
-
+
 
 <footer>
   <p>✨ Built with ❤️ for HSK learners •</p>
