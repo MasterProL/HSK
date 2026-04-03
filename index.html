@@ -71,8 +71,8 @@
 <!-- Progress bar (study mode) -->
 <div class="stats" id="statsBar">
   <div class="stats-row">
-    <span><strong id="progressCount">0</strong> mastered</span>
-    <span>of <strong id="totalCount">0</strong> words</span>
+    <span><strong id="progressCount">0</strong> <span id="masteredLabel">mastered</span></span>
+    <span><span id="ofLabel">of</span> <strong id="totalCount">0</strong> <span id="wordsLabel">words</span></span>
     <button class="btn btn-danger" id="resetBtn" style="padding:6px 16px;font-size:0.85rem;">↺ Reset</button>
   </div>
   <div class="progress-track"><div class="progress-fill" id="progressBar"></div></div>
@@ -2629,7 +2629,7 @@
 
 
 <footer>
-  <p>✨ Built with ❤️ for HSK learners •</p>
+  <p id="footerText">✨ Built with ❤️ for HSK learners •</p>
      
   <div class="flexBoxIcon">
     <a href="https://www.instagram.com/xshox47?igsh=ZDJkdzFpdjVsbzk0"><img src="img/instagram.png" alt="Instagram"></a>  <!-- Instagram -->
@@ -2640,5 +2640,6 @@
 
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>

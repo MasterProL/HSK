@@ -679,7 +679,7 @@
     {"chinese":"照顾","pinyin":"zhàogu","russian":"заботиться, ухаживать","level":3,"type":"v"},
     {"chinese":"祝","pinyin":"zhù","russian":"желать, поздравлять","level":3,"type":"v"},
     {"chinese":"注意","pinyin":"zhùyì","russian":"обращать внимание, быть внимательным","level":3,"type":"v"},
-    {"chinese":"长","pinyin":"cháng","russian":"длинный","level":3,"type":"adj"}
+    {"chinese":"长","pinyin":"cháng","russian":"длинный","level":3,"type":"adj"},
 
 
 
@@ -1259,26 +1259,3 @@
 
 
 ]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
