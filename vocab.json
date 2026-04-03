@@ -1,6 +1,6 @@
 [
     
-    
+    // HSK 1
 
      
     {"chinese": "你好", "pinyin": "nǐ hǎo", "english": "hello", "level": 1, "type": "phrase", "sentence": "你好，认识你很高兴！", "sentencePy": "Nǐ hǎo, rènshi nǐ hěn gāoxìng!", "sentenceEn": "Hello, nice to meet you!"},
@@ -153,7 +153,7 @@
     {"chinese":"做","pinyin":"zuò","english":"to do","level":1,"type":"v"},
     {"chinese":"坐","pinyin":"zuò","english":"to sit","level":1,"type":"v"},
 
-
+    // HSK 2 
 
     {"chinese":"白","pinyin":"bái","english":"white","level":2,"type":"adj"},
     {"chinese":"长","pinyin":"cháng","english":"long","level":2,"type":"adj"},
@@ -307,7 +307,7 @@
     {"chinese":"走","pinyin":"zǒu","english":"to walk, to go, to leave","level":2,"type":"v"},
         
 
-
+    // HSK 3
     
 
 
@@ -678,6 +678,7 @@
     {"chinese":"长","pinyin":"cháng","english":"long","level":3,"type":"adj"},
 
 
+    // HSK 4
 
   
     {"chinese":"安全","pinyin":"ānquán","english":"safe; safety","level":4,"type":"adj"},

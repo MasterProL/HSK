@@ -21,9 +21,35 @@ body {
 }
 
 /* ── Header ── */
-header { text-align: center; padding: 25px 0 15px; }
-h1 { font-size: 2.6rem; color: var(--dark); margin: 8px 0; }
-.subtitle { color: #666; font-size: 1.1rem; }
+header { text-align: center; padding: 20px 12px 14px; position: relative; }
+.header-top { display: flex; justify-content: center; align-items: center; gap: 12px; position: relative; }
+h1 { font-size: 2.4rem; color: var(--dark); margin: 8px 0; }
+.subtitle { color: #666; font-size: 1.05rem; margin: 4px 0 8px; }
+.burger-group { display: flex; align-items: center; gap: 8px; position: relative; }
+.burger-btn {
+  border: 0; border-radius: 12px; background: rgba(67,97,238,0.16);
+  width: 44px; height: 44px; font-size: 1.2rem; line-height: 1; cursor: pointer;
+  color: var(--primary); display: flex; align-items: center; justify-content: center;
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+.burger-btn:hover { transform: translateY(-1px); background: rgba(67,97,238,0.26); box-shadow: 0 10px 20px rgba(67,97,238,0.24); }
+.burger-btn:focus { outline: none; box-shadow: 0 0 0 3px rgba(67,97,238,0.2); }
+.burger-label { font-size: 0.95rem; color: var(--primary); font-weight: 600; cursor: pointer; }
+.burger-lang-menu {
+  position: absolute; top: 50px; right: 0; background: white;
+  border: 1px solid rgba(67,97,238,0.24); border-radius: 16px;
+  box-shadow: 0 14px 28px rgba(23,45,93,0.12);
+  display: flex; flex-direction: column; padding: 10px 8px; gap: 4px; width: 170px; z-index: 1000;
+  transform-origin: top right; animation: popup 0.16s ease-out;
+}
+@keyframes popup { from { opacity: 0; transform: scale(0.94); } to { opacity: 1; transform: scale(1); } }
+.burger-lang-menu.hidden { display: none; }
+.burger-menu-title { padding: 6px 12px; font-size: 0.85rem; color: #5f6b7b; text-transform: uppercase; letter-spacing: 0.5px; }
+.lang-option { border: none; background: transparent; text-align: left; padding: 10px 12px;
+  border-radius: 10px; cursor: pointer; color: #2b3a61; font-weight: 600; transition: all 0.2s;
+}
+.lang-option.active { background: rgba(67,97,238,0.12); color: var(--primary); }
+.lang-option:hover { background: rgba(67,97,238,0.12); color: var(--primary); }
 
 /* ── Mode Tabs ── */
 .mode-tabs { display: flex; justify-content: center; gap: 10px; margin: 18px 0 10px; }
